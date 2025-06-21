@@ -124,7 +124,8 @@
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <% if(files.length > 0) { %> <% files.forEach((val, index) => { %>
+          <% if (typeof files !== "undefined" && files.length > 0) { %> <%
+          files.forEach((val, index) => { %>
           <div
             class="task-card glass-morphism rounded-2xl p-6 shadow-xl transition-all duration-500 hover:shadow-2xl fade-in-up"
             style="animation-delay: 2s"
